@@ -1,0 +1,30 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /yingxue_xiaotao
+    jsp:
+      init-parameters:
+        development: true
+spring:
+  banner:
+    charset: UTF-8
+    image:
+      location: banner.txt
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/yingxue?useUnicode=true&characterEncoding=utf8
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 50MB
+
+mybatis:
+  type-aliases-package: com.baozhi.entity
+  mapper-locations: classpath:com/baizhi/mapper/*Mapper.xml

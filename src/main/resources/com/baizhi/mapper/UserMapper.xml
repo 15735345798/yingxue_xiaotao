@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baizhi.dao.UserMapper">
+    <select id="yueryByUser" resultType="com.baizhi.po.UserPO">
+        select concat(month(create_date),'月') month,count(id) count from user group by month(create_date);
+    </select>
+    <select id="queryByUserPPo" resultType="com.baizhi.po.UserPPO" parameterType="String">
+        select catiy name,count(sex) value from user where sex=#{sex} group by catiy
+    </select>
+</mapper>
