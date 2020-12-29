@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author:xiaotao
@@ -45,5 +46,13 @@ public class VideoController {
     @RequestMapping("upload123")
     public void uploadVideoCover(MultipartFile videoPath, String id, HttpServletRequest request){
         videoService.uploadVideoCover(videoPath,id,request);
+    }
+    //根据用户输入内容进行检索
+    @ResponseBody
+    @RequestMapping("searchVideo")
+    public List<Video> searchVideo(String content){
+
+
+        return null;
     }
 }
