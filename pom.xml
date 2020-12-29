@@ -170,19 +170,8 @@
             <artifactId>easypoi-annotation</artifactId>
             <version>4.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-core</artifactId>
-            <version>8.4.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-        </dependency>
         <!--检索-->
-
-
+        
     </dependencies>
 
     <build>
