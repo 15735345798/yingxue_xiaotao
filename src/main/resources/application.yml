@@ -26,7 +26,7 @@ spring:
       max-file-size: 50MB
   data:
     elasticsearch:
-      cluster-nodes: 192.168.109.135:9300
+      cluster-nodes: 192.168.109.136:9300
 mybatis:
   type-aliases-package: com.baozhi.entity
   mapper-locations: classpath:com/baizhi/mapper/*Mapper.xml
