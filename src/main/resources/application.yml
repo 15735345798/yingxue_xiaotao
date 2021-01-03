@@ -27,6 +27,12 @@ spring:
   data:
     elasticsearch:
       cluster-nodes: 192.168.109.136:9300
+  rabbitmq:
+    host: 192.168.109.130
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: yingx
 mybatis:
   type-aliases-package: com.baozhi.entity
   mapper-locations: classpath:com/baizhi/mapper/*Mapper.xml
